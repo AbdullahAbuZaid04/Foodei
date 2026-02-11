@@ -1,0 +1,48 @@
+.feature-card {
+  width: 260px;
+  padding: 24px 18px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(255, 152, 0, 0.12);
+}
+
+.feature-icon img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.feature-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+  margin: 0;
+}
+
+.feature-description {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  line-height: 1.6;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .feature-card {
+    width: 100%;
+    max-width: 260px;
+  }
+}
