@@ -24,6 +24,7 @@ export default function NewsletterSection() {
       <motion.h2
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ delay: 0.3, duration: 0.5 }}
       >
         Have Question In Mind? Let Us Help You
@@ -34,6 +35,7 @@ export default function NewsletterSection() {
         onSubmit={handleSubmit}
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
         transition={{ delay: 0.4, duration: 0.5 }}
       >
         <input

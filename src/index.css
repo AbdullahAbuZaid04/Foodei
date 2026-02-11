@@ -1,9 +1,33 @@
-body {
-  font-family: "Arial", Helvetica, sans-serif;
-  overflow-x: hidden;
-  background-color: #faf9f6;
+/* Reset & base styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Arial", Helvetica, sans-serif;
+  background-color: #faf9f6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Color variables */
+:root {
+  --primary-orange: #ff9800;
+  --light-orange: #ffe0b2;
+  --light-yellow: #fffbe7;
+  --text-dark: #222;
+  --text-gray: #555;
+  --text-light: #6a6a6a;
+  --white: #ffffff;
+  --shadow: 0 2px 12px rgba(255, 179, 71, 0.08);
 }
