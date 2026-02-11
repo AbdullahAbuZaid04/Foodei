@@ -38,10 +38,9 @@ export default function Footer() {
 
   // إعدادات الأنيميشن الخفيف
   const fadeInVariant = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0 },
     visible: (custom) => ({
       opacity: 1,
-      y: 0,
       transition: { delay: custom * 0.18, duration: 0.8, ease: "easeOut" },
     }),
   };
@@ -54,7 +53,6 @@ export default function Footer() {
       viewport={{ once: true, amount: 0.1 }}
     >
       <div className="footer-content">
-        {/* العمود الأول: اللوجو والسوشيال */}
         <motion.div
           className="footer-brand"
           custom={1}
@@ -71,7 +69,11 @@ export default function Footer() {
                   key={index}
                   href={social.url}
                   className="social-link"
-                  whileHover={{ y: -3, color: "white" }} // حركة بسيطة جداً
+                  whileHover={{
+                    y: -3,
+                    color: "white",
+                    backgroundColor: "orange",
+                  }}
                 >
                   <Icon />
                 </motion.a>
